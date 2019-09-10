@@ -1,6 +1,10 @@
-# Proyecto_
+# Proyecto TRITECHNO
 
-#Presentacion_general
+# PRESENTACION GENERAL 
+
+
+
+
 
 
 Proyecto de taller de lenguajes de programación 2. 2019-2
