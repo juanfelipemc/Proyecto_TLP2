@@ -27,6 +27,6 @@ Sin embargo, hasta el día de hoy los clientes pasan mucho tiempo en busca de su
 # JUSTIFICACIÓN
 
 # DIAGRAMA DEL PROCESO DE INGENIERÍA DE SOFWARE
-![screenshot](Diagrama Casos de uso.jpeg)
+![Screenshot](Diagrama Casos de uso.jpeg)
 
 Proyecto de taller de lenguajes de programación 2. 2019-2
