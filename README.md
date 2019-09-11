@@ -15,6 +15,8 @@ Se estima que el 90% de las personas que compran en línea tienen entre 18 y 29 
 
 # PROBLEMA
 
-Actualmente
+Debido al crecimiento en gran magnitud de la tecnología, la sociedad y el avance de estas es lo normal que cada tienda reconocida tenga su tienda online para brindar a sus clientes una forma rápida y segura de realizar su compra desde la comodidad de cualquier lugar y a través de un dispositivo smart.
+
+Sin embargo, hasta el día de hoy los clientes pasan mucho tiempo en busca de su producto ideal en cuanto a precio, preferencia y calidad, es por esto que BLACK TECHNOMRKET ofrece a los usuarios en línea una forma mucho más rápida de comparar las tres cualidades dichas anteriormente para que encuentre su producto ideal.
 
 Proyecto de taller de lenguajes de programación 2. 2019-2
