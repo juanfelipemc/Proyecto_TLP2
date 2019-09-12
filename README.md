@@ -14,7 +14,7 @@ Un estudio hecho por SEMrush muestra que el 55.22% de las compras de aparatos el
 
 Se estima que el 90% de las personas que compran en línea tienen entre 18 y 29 años y prefieren realizar sus compras a través de computadores portátiles en vez de hacerlo en tabletas o smartphones debido a la comodidad, el manejo y ahorro de tiempo en las páginas web a través del ordenador.
 
-![estadisticas](estadisticas.png)
+![estadisticas](estadisticas.PNG)
 
 Además de esto, un estudio de la revista Semana reveló que a partir del incremento del IVA al 19% en Colombia, las transacciones de Amazon y otras tiendas virtuales aumentaron en un 24% con respecto al año anterior.
 
