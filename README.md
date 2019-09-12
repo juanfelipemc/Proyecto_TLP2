@@ -38,4 +38,7 @@ El siguiente proyecto se enfoca en la implementación de un Software, el cual no
 
 ![Diagrama_Casosdeuso](Diagrama_Casosdeuso.jpeg)
 
+# TABLERO DE ACTIVIDADES (KANBAN)
+
+![TableroActividades](TableroActividades.JPG)
 Proyecto de taller de lenguajes de programación 2. 2019-2
