@@ -36,7 +36,7 @@ El siguiente proyecto se enfoca en la implementación de un Software, el cual no
 
 # DIAGRAMA DEL PROCESO DE INGENIERÍA DE SOFWARE
 
-![Diagrama_Casosdeuso](Diagrama_Casosdeuso.png)
+![Diagrama_CasosdeUso](Diagrama_CasosdeUso.png)
 
 # TABLERO DE ACTIVIDADES (KANBAN)
 
