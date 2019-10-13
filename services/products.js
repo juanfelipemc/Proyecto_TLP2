@@ -1,3 +1,4 @@
+
 const MongoLib = require('../lib/mongo');
 
 class ProductsService {
@@ -27,6 +28,11 @@ class ProductsService {
         return product || {};
     }
 
+    async getProducts ( {productPrice} ){
+        const product = await this.mongoDB.get(this.collection, productPrice);
+        return product || {};
+    }
+
     async createProduct( {product}){
         const createdProductId = await this.mongoDB.create(this.collection, product);
         return createdProductId;
@@ -41,5 +47,6 @@ class ProductsService {
         const deletedProductId = await this.mongoDB.delete(this.collection, productId);
         return deletedProductId;
     }
+    
 }
 module.exports = ProductsService;
