@@ -9,27 +9,12 @@ class ProductsService {
 
     async getProducts ( {tags} ){
         const query = tags && {$in : {tags}};
-        const products = await this.mongoDB(this.collection, query);
+        const products = await this.mongoDB.getAll(this.collection, query);
         return products || []
     }
 
-    async getProducts ( {productId} ){
-        const product = await this.mongoDB.get(this.collection, productId);
-        return product || {};
-    }
-
-    async getProducts ( {productCategory} ){
-        const product = await this.mongoDB.get(this.collection, productCategory);
-        return product || {};
-    }
-
-    async getProducts ( {productBrand} ){
-        const product = await this.mongoDB.get(this.collection, productBrand);
-        return product || {};
-    }
-
-    async getProducts ( {productPrice} ){
-        const product = await this.mongoDB.get(this.collection, productPrice);
+    async getProductsFilter ( {productFilter} ){
+        const product = await this.mongoDB.getFilter(this.collection, productFilter);
         return product || {};
     }
 
@@ -47,6 +32,5 @@ class ProductsService {
         const deletedProductId = await this.mongoDB.delete(this.collection, productId);
         return deletedProductId;
     }
-    
 }
 module.exports = ProductsService;

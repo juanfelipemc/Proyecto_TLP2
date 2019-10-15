@@ -1,30 +1,22 @@
 
+
+
 const MongoLib = require('../lib/mongo');
 
 class UserService {
     constructor(){
-        this.collection = 'user';
+        this.collection = 'users';
         this.mongoDB= new MongoLib();
     }
 
-    async getUser ( {tags} ){
+    async getUsers ( {tags} ){
         const query = tags && {$in : {tags}};
-        const user = await this.mongoDB(this.collection, query);
+        const user = await this.mongoDB.getAll(this.collection, query);
         return user || []
     }
 
     async getUser ( {userId} ){
-        const user = await this.mongoDB.get(this.collection, userId);
-        return user || {};
-    }
-
-    async getUser ( {userPassword} ){
-        const user = await this.mongoDB.get(this.collection, userPassword);
-        return user || {};
-    }
-
-    async getUser ( {userType} ){
-        const user = await this.mongoDB.get(this.collection, userType);
+        const user = await this.mongoDB.getId(this.collection, userId);
         return user || {};
     }
 
@@ -33,7 +25,7 @@ class UserService {
         return createdUser;
     }
 
-    async udpateUser({ puserId, user } = { }){
+    async udpateUser({ userId, user } = { }){
         const updatedUser = await this.mongoDB.update(this.collection, userId, user);
         return updatedUser;
     }

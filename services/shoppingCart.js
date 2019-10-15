@@ -12,17 +12,17 @@ class ShoppingCartService {
         return shoppingCart || []
     }
 
-    async getShoppingCart ( {userId} ){
+    async getShoppingCartUId ( {userId} ){
         const user = await this.mongoDB.get(this.collection, userId);
         return user || {};
     }
 
-    async getShoppingCart ( {productId} ){
+    async getShoppingCartPId ( {productId} ){
         const product = await this.mongoDB.get(this.collection, productId);
         return product || {};
     }
 
-    async getShoppingCart ( {productCant} ){
+    async getShoppingCartPCant ( {productCant} ){
         const product = await this.mongoDB.get(this.collection, productCant);
         return product || {};
     }

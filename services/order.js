@@ -12,27 +12,27 @@ class OrderService {
         return order || []
     }
 
-    async getOrder ( {orderId} ){
+    async getOrderId ( {orderId} ){
         const order = await this.mongoDB.get(this.collection, orderId);
         return order || {};
     }
 
-    async getOrder ( {orderDate} ){
+    async getOrderDate ( {orderDate} ){
         const order = await this.mongoDB.get(this.collection, orderDate);
         return order || {};
     }
 
-    async getOrder ( {productId} ){
+    async getOrderPId ( {productId} ){
         const product = await this.mongoDB.get(this.collection, productId);
         return product || {};
     }
 
-    async getOrder ( {productPrice} ){
+    async getOrderPPrice ( {productPrice} ){
         const product = await this.mongoDB.get(this.collection, productPrice);
         return product || {};
     }
 
-    async getOrder ( {orderPrice} ){
+    async getOrderPrice ( {orderPrice} ){
         const order = await this.mongoDB.get(this.collection, orderPrice);
         return order || {};
     }
