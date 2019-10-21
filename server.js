@@ -2,16 +2,18 @@
 const express = require('express');
 const app = express();
 const productsApi= require('./routes/products');
-const webPagesApi= require('./routes/webPages');
+const ordersApi= require('./routes/orders');
 const usersApi= require('./routes/users');
+const shoppingCart= require('./routes/shoppingCart');
 const { config } =require('./config/index');
 //---->>> Body Parser <<<------------
 app.use(express.json());
 
 //---->>>> routes <<<----------
 productsApi(app);
-webPagesApi(app);
+ordersApi(app);
 usersApi(app);
+shoppingCart(app);
 //---->>> get de la ruta principal del back <<<--------
 app.get('/',(req,res,next)=>{
     res.send("Informe dos de taller de lenguajes de programación 2");

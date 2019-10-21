@@ -24,6 +24,7 @@
     "mongodb": "^3.3.2"
   },
   "devDependencies": {
+    "node-moment": "^2.5.1",
     "nodemon": "^1.19.3"
   }
 }
