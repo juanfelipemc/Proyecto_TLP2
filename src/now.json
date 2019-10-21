@@ -1,0 +1,21 @@
+{
+    "name": "blackTechnoMarket-app",
+
+    "version": 2,
+
+    "builds": [{ "src": "server.js", "use": "@now/node-server" }],
+
+    "routes": [{ "src": "/(.*)", "dest": "/server.js" }],
+
+    "env": {
+
+        "DB_USER": "@blackTechnoMarket-db-user",
+  
+        "DB_PASSWORD": "@blackTechnoMarket-db-password",
+  
+        "DB_HOST": "@blackTechnoMarket-db-host",
+  
+        "DB_NAME": "@blackTechnoMarket-db-name"
+  
+      }
+}

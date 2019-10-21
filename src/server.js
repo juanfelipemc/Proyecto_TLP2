@@ -1,5 +1,6 @@
 //server.js
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const productsApi= require('./routes/products');
 const ordersApi= require('./routes/orders');
@@ -8,7 +9,7 @@ const shoppingCart= require('./routes/shoppingCart');
 const { config } =require('./config/index');
 //---->>> Body Parser <<<------------
 app.use(express.json());
-
+app.use(cors());
 //---->>>> routes <<<----------
 productsApi(app);
 ordersApi(app);
