@@ -1,6 +1,3 @@
-
-
-
 const MongoLib = require('../lib/mongo');
 
 class UserService {
@@ -15,8 +12,8 @@ class UserService {
         return user || []
     }
 
-    async getUser ( {userId} ){
-        const user = await this.mongoDB.getId(this.collection, userId);
+    async getUsersFilter ( {userFilter} ){
+        const user = await this.mongoDB.getFilter(this.collection, userFilter);
         return user || {};
     }
 

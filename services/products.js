@@ -19,8 +19,8 @@ class ProductsService {
     }
 
     async createProduct( {product}){
-        const createdProductId = await this.mongoDB.create(this.collection, product);
-        return createdProductId;
+        const createdProduct = await this.mongoDB.create(this.collection, product);
+        return createdProduct;
     }
 
     async udpateProducts({ productId, product } = { }){

@@ -8,40 +8,28 @@ class ShoppingCartService {
 
     async getShoppingCart ( {tags} ){
         const query = tags && {$in : {tags}};
-        const shoppingCart = await this.mongoDB(this.collection, query);
+        const shoppingCart = await this.mongoDB.getAll(this.collection, query);
         return shoppingCart || []
     }
 
-    async getShoppingCartUId ( {userId} ){
-        const user = await this.mongoDB.get(this.collection, userId);
-        return user || {};
-    }
-
-    async getShoppingCartPId ( {productId} ){
-        const product = await this.mongoDB.get(this.collection, productId);
-        return product || {};
-    }
-
-    async getShoppingCartPCant ( {productCant} ){
-        const product = await this.mongoDB.get(this.collection, productCant);
-        return product || {};
+    async getShoppingCartFilter ( {shoppingCartFilter} ){
+        const shoppingCart = await this.mongoDB.getFilter(this.collection, shoppingCartFilter);
+        return shoppingCart || {};
     }
 
     async createShoppingCart( {shoppingCart}){
-        const createdShoppingCart = await this.mongoDB.create(this.collection, shoppingCart);
-        return createdShoppingCart;
+        const createdshoppingCart = await this.mongoDB.create(this.collection, shoppingCart);
+        return createdshoppingCart;
     }
 
-    async udpateShoppingCart({ shoppingCart}){
-       const updatedShoppingCart = await this.mongoDB.update(this.collection, shoppingCart);
-       return updatedShoppingCart;
+    async udpateShoppingCart({ shoppingCartId, shoppingCart } = { }){
+        const updatedshoppingCartId = await this.mongoDB.update(this.collection, shoppingCartId, shoppingCart);
+        return updatedshoppingCartId;
     }
 
-    async deleteProducts({ shoppingCart }){
-        const deletedShoppingCart = await this.mongoDB.delete(this.collection, shoppingCart);
-        return deletedShoppingCart;
+    async deleteShoppingCart({ shoppingCartId }){
+        const deletedShoppingCartId = await this.mongoDB.delete(this.collection, shoppingCartId);
+        return deletedShoppingCartId;
     }
-
-    
 }
 module.exports = ShoppingCartService;

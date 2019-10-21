@@ -8,32 +8,12 @@ class OrderService {
 
     async getOrder( {tags} ){
         const query = tags && {$in : {tags}};
-        const order = await this.mongoDB(this.collection, query);
+        const order = await this.mongoDB.getAll(this.collection, query);
         return order || []
     }
 
-    async getOrderId ( {orderId} ){
-        const order = await this.mongoDB.get(this.collection, orderId);
-        return order || {};
-    }
-
-    async getOrderDate ( {orderDate} ){
-        const order = await this.mongoDB.get(this.collection, orderDate);
-        return order || {};
-    }
-
-    async getOrderPId ( {productId} ){
-        const product = await this.mongoDB.get(this.collection, productId);
-        return product || {};
-    }
-
-    async getOrderPPrice ( {productPrice} ){
-        const product = await this.mongoDB.get(this.collection, productPrice);
-        return product || {};
-    }
-
-    async getOrderPrice ( {orderPrice} ){
-        const order = await this.mongoDB.get(this.collection, orderPrice);
+    async getOrdersFilter ( {ordersFilter} ){
+        const order = await this.mongoDB.getFilter(this.collection, ordersFilter);
         return order || {};
     }
 
@@ -47,10 +27,9 @@ class OrderService {
         return updatedOrderId;
     }
 
-    async deleteProducts({ orderId }){
+    async deleteOrder({ orderId }){
         const deletedOrderId = await this.mongoDB.delete(this.collection, orderId);
         return deletedOrderId;
-    }
-    
+    }  
 }
 module.exports = OrderService;
