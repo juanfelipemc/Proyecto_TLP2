@@ -6,7 +6,7 @@ class OrderService {
         this.mongoDB= new MongoLib();
     }
 
-    async getOrder( {tags} ){
+    async getOrders( {tags} ){
         const query = tags && {$in : {tags}};
         const order = await this.mongoDB.getAll(this.collection, query);
         return order || []
