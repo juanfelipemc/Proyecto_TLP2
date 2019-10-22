@@ -64,10 +64,10 @@ class MongoLib {
                         .toArray();
                     }); 
                     break;
-                case 'orders':
+                case 'order':
                     return this.connect().then(db => {
                         return db.collection(collection)
-                        .find({$or:[{ "dateorder.year": new Date(filter).getFullYear(), "dateorder.month": new Date(filter).getMonth()+1, "dateorder.day": new Date(filter).getDate()+1 },
+                        .find({$or:[{ "dateOrder.year": new Date(filter).getFullYear(), "dateOrder.month": new Date(filter).getMonth()+1, "dateOrder.day": new Date(filter).getDate()+1 },
                                     { "user.documentId": filter }, { "user.username": filter },{ "user.cellphone": filter }]})
                         .sort({price : 1, dateorder : 1})
                         .toArray();
