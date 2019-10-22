@@ -45,6 +45,7 @@ El siguiente proyecto se enfoca en la implementación de un Software, el cual no
 # MODELO LÓGICO DE LOS DATOS Y MODELO LÓGICO DE LA BASE DE DATOS
 
 En nuestra base de datos implementada en MongoDB, al tener un esquema flexible a los cambios, nos permitió hacer que las colecciones estuvieran formadas por documentos embebidos ya que las consultas sobre estos son mucho más rapidas y esto para manejar grandes volumenes de datos es lo ideal. 
+
 Nuestra Base de datos, cuenta con 4 colecciones que son:
 
  -**order**  
@@ -57,24 +58,24 @@ Nuestra Base de datos, cuenta con 4 colecciones que son:
  
 Así:
 
-![BD][BD.PNG]
+![BD](BD.PNG)
 
 Los documentos de las diferentes colecciones tienen los siguientes formatos:
 
  **Colección User**
 
-![User][User.PNG]
+![User](User.PNG)
 
  **Colección Product**
  
-![Product][Product.PNG]
+![Product](Product.PNG)
 
   **Colección ShoppingCart**
   
-![ShoppingCart][ShoppingCart.PNG]
+![ShoppingCart](ShoppingCart.PNG)
 
   **Colección Order**
   
-![Order][Order.PNG]
+![Order](Order.PNG)
 
  # Proyecto de taller de lenguajes de programación 2. 2019-2
