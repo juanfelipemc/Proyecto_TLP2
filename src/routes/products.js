@@ -61,7 +61,7 @@ function productsApi(app){
         const { productId } = req.params;
 
         try{
-            const updatedproductId = await productsService.udpateProduct({ productId , product });
+            const updatedproductId = await productsService.udpateProducts({ productId , product });
             res.status(200).json({
                 data: updatedproductId,
                 message: 'product updated'
