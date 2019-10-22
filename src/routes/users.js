@@ -42,7 +42,7 @@ function userServices(app){
         //sacamos del cuerpo (body) de la petición la pagina web.
         const { body : user } = req;
         try{
-            const createduserId = await user.createUser( { user });
+            const createduserId = await userService.createUser( { user });
 
             res.status(201).json({
                 data: createduserId,
@@ -59,7 +59,7 @@ function userServices(app){
         const { userId } = req.params;
 
         try{
-            const updateduserId = await user.udpateUser({ userId , user });
+            const updateduserId = await userService.udpateUser({ userId , user });
             res.status(200).json({
                 data: updateduserId,
                 message: 'User updated'
@@ -73,7 +73,7 @@ function userServices(app){
     router.delete("/:userId", async function (req, res, next){
         const { userId } = req.params;
         try{
-            const deleteduserId = await user.deleteUser({ userId });
+            const deleteduserId = await userService.deleteUser({ userId });
 
             res.status(200).json({
                 data: deleteduserId,
