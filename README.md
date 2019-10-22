@@ -78,4 +78,9 @@ Los documentos de las diferentes colecciones tienen los siguientes formatos:
   
 ![Order](Order.PNG)
 
+
+## DIAGRAMA DE CLASES
+
+![DiagramaD](DiagramaD.PNG)
+
  # Proyecto de taller de lenguajes de programación 2. 2019-2
