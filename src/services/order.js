@@ -12,13 +12,13 @@ class OrderService {
         return order || []
     }
 
-    async getOrdersFilter ( {ordersFilter} ){
+    async getOrdersFilter ( ordersFilter ){
         const order = await this.mongoDB.getFilter(this.collection, ordersFilter);
         return order || {};
     }
 
-    async createOrder( {order}){
-        const createOrdertId = await this.mongoDB.create(this.collection, order);
+    async createOrder( {order} ){
+        const createdOrderId = await this.mongoDB.create(this.collection, order);
         return createdOrderId;
     }
 
