@@ -42,5 +42,99 @@ El siguiente proyecto se enfoca en la implementación de un Software, el cual no
 
 ![TableroActividades](TableroActividades.PNG)
 
+# MODELO LÓGICO DE LOS DATOS Y MODELO LÓGICO DE LA BASE DE DATOS
 
-Proyecto de taller de lenguajes de programación 2. 2019-2
+En nuestra base de datos implementada en MongoDB, al tener un esquema flexible a los cambios, nos permitió hacer que las colecciones estuvieran formadas por documentos embebidos ya que las consultas sobre estos son mucho más rapidas y esto para manejar grandes volumenes de datos es lo ideal. 
+Nuestra Base de datos, cuenta con 4 colecciones que son: 
+  **order**  
+  **shoppingCart**
+  **products**
+  **users**
+Así:
+
+![BD][BD.PNG]
+
+Los documentos de las diferentes colecciones tienen los siguientes formatos:
+ **Colección User**
+{
+  "_id": ObjectId(String),
+  "username": string,
+  "password": string,
+  "documentId": string,
+  "name": string,
+  "lastName": string,
+  "email": string,
+  "cellphone": string,
+  "city": {                                                    
+      "name": string,
+      "department": string,
+      "county" : string  
+  }
+  "adress": string
+}
+ **Colección Product**
+{
+  "_id": ObjectId(String),
+  "name": string,
+  "brand": string,
+  "category": string,
+  "price": Int32,
+  "webPage": {
+    "name": string,
+    "URL": string
+  }
+}
+
+  **Colección ShoppingCart**
+{
+  "username": string,
+  "products":[
+    {
+      "name": string,
+      "brand": string,
+      "category": string,
+      "price": Int32,
+      "webPage": {
+        "name": string,
+        "URL": string
+      },
+      "quantity": Int32
+    }
+  ]
+}
+  **Colección Order**
+{
+  "_id" : string,
+  "orderId" : string,
+  "dateOrder" : {
+    "year": Int32,
+    "month": Int32,
+    "day": Int32
+    },
+  "user": {
+    "documentId": string,
+    "name": string,
+    "lastName": string,
+    "adress": string
+    },
+  "payment": string,
+  "description": string,
+  "products":[
+    {
+      "name": string,
+      "brand": string,
+      "category": string,
+      "price": Int32,
+      "webPage": {
+        "name": string,
+        "URL": string
+      },
+      "quantity": Int32
+    }
+  ],
+  "price": Int32,
+  "costShipping": Int32,
+  "totalPrice": Int32
+}
+
+ # Proyecto de taller de lenguajes de programación 2. 2019-2
