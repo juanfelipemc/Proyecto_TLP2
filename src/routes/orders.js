@@ -27,7 +27,7 @@ function ordersApi(app){
         //en este caso el filtro viene como parámetro en la URL
         const { orderFilter } = req.params;
         try{
-            const orders = await ordersService.getOrdersFilter({ orderFilter });
+            const orders = await ordersService.getOrdersFilter( orderFilter );
 
             res.status(200).json({
                 data: orders,
