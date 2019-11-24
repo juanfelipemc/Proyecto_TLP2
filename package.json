@@ -2,7 +2,7 @@
   "name": "Proyecto_TLP2",
   "version": "1.0.0",
   "description": "Proyecto de taller de lenguajes de programación 2. 2019-2",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
