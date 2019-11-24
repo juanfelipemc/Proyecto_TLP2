@@ -3,8 +3,8 @@ const { config } = require('../config');
 
 const USER = encodeURIComponent(config.dbUser);
 const PASSWORD = encodeURIComponent(config.dbPassword);
-//const DB_NAME = config.dbName;
-const DB_NAME = "db_blackTechnoMarket";
+const DB_NAME = config.dbName;
+//const DB_NAME = "db_blackTechnoMarket";
 
 //========== url de conexion ================
 const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}/${DB_NAME}?retryWrites=true&w=majority`;
@@ -22,8 +22,6 @@ class MongoLib {
                     if(err){
                         reject(err);
                     }
-                    console.log(MONGO_URI);
-                    console.log('Connected succesfully to mongo');
                     resolve(this.client.db(this.dbName));
                 });
             });
@@ -63,7 +61,6 @@ class MongoLib {
                         .sort({price : 1})
                         .toArray();
                     }); 
-                    break;
                 case 'order':
                     return this.connect().then(db => {
                         return db.collection(collection)
@@ -72,21 +69,18 @@ class MongoLib {
                         .sort({price : 1, dateorder : 1})
                         .toArray();
                     });
-                    break;
                 case 'users':
                     return this.connect().then(db => {
                         return db.collection(collection)
                         .find({$or:[{ username: filter },  { cellphone: filter } ,  { documentId: filter }]})
                         .toArray();
                     });
-                    break;
                 case 'shoppingCart':
                         return this.connect().then(db => {
                             return db.collection(collection)
                             .find({ username: filter })
                             .toArray();
                         });
-                        break;
             }
         }
     }
