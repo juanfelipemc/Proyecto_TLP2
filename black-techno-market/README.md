@@ -40,7 +40,7 @@ El siguiente proyecto se enfoca en la implementación de un Software, el cual no
 
 # TABLERO DE ACTIVIDADES (KANBAN)
 
-![TableroActividades](TableroActividades.png)
+![TablerodeActividades](TablerodeActividades.png)
 
 # MODELO LÓGICO DE LOS DATOS Y MODELO LÓGICO DE LA BASE DE DATOS
 
