@@ -28,7 +28,7 @@ class ProductsService {
         return updatedProductId;
     }
 
-    async deleteProducts({ productId }){
+    async deleteProduct({ productId }){
         const deletedProductId = await this.mongoDB.delete(this.collection, productId);
         return deletedProductId;
     }
