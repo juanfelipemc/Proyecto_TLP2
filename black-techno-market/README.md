@@ -87,5 +87,12 @@ Los documentos de las diferentes colecciones tienen los siguientes formatos:
 
 https://marvelapp.com/6a8ib81
 
+## RUTAS DEL BACKEND
+
+https://blacktechnomarket.now.sh/api/products
+https://blacktechnomarket.now.sh/api/shoppingcart
+https://blacktechnomarket.now.sh/api/orders
+https://blacktechnomarket.now.sh/api/user
+
 
  # Proyecto de taller de lenguajes de programación 2. 2019-2
