@@ -45,11 +45,11 @@ class Contacto extends Component
                         <p></p>
                         <ul>
                             <li>  Calle 49 # 87b-17 Medellin</li>
-                            <li> <i class="fas fa-phone"></i> 555 555 555</li>
-                            <li> <i class="fas fa-envelope-open-text"></i> virtualGames@contacto.com</li>
+                            <li> <i class="fas fa-phone"></i>3187849962</li>
+                            <li> <i class="fas fa-envelope-open-text"></i> BLACKTECHNOMARKET@gmail.com</li>
                         </ul>
                         <p>
-                            <strong>www.gameplace.com</strong>
+                            <strong>www.BLACKTECHNOMARKET.com</strong>
                         </p>
                      </div>
 

@@ -1,7 +1,4 @@
 import React from "react";
-import fifa from '../Images/fifa19.jpg'
-import battlefield from '../Images/bv.jpg'
-import cod4 from '../Images/cod4.jpg'
 import '../Styles/card.css'
 
 class Carrito extends React.Component{
@@ -20,23 +17,23 @@ class Carrito extends React.Component{
     </thead>
     <tbody>
         <tr>
-            <td><img id="imagenes" src="https://dprimero.com/wp-content/uploads/2019/03/SKU-000252.jpg"></img></td>
-            <td>$109.000</td>
+            <td><img id="imagenes" src="https://falabella.scene7.com/is/image/FalabellaCO/3831863_1?$producto308$&wid=800&hei=800&qlt=70"></img></td>
+            <td>$418.900</td>
             <td> 1 </td>
-            <td>$109.000</td>
+            <td>$418.900</td>
         </tr>
         <tr>
-        <td><img id="imagenes" src="https://dprimero.com/wp-content/uploads/2019/03/SKU-000225.jpg"></img></td>
-            <td>$219.000</td>
+        <td><img id="imagenes" src="https://falabella.scene7.com/is/image/FalabellaCO/880978920_1?$producto308$&wid=800&hei=800&qlt=70"></img></td>
+            <td>$299.994</td>
             <td> 1 </td>
-            <td>$219.000</td>
+            <td>$299.994</td>
         </tr>
      
         <tr>
             <td>-</td>
             <td>-</td>
             <td><strong>Total</strong></td>
-            <td>$328.000</td>
+            <td>$718.894</td>
         </tr>
        
     </tbody>

@@ -1,9 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel, CarouselItem} from "react-bootstrap";
-import crash from '../Images/crash.jpg'
-import callduty from '../Images/callduty1.jpg'
-import fifa from '../Images/fifa.jpg'
 import '../Styles/carrusel.css'
 
 class Carrusel extends React.Component
@@ -17,8 +14,8 @@ class Carrusel extends React.Component
             <Carousel.Item>
               <img
                 className="d-flex w-100" 
-                //src="http://pipsum.com/435x310.jpg"
-                src={crash}
+                src="https://falabella.scene7.com/is/image/FalabellaCO/3844865_1?$producto308$&wid=800&hei=800&qlt=70"
+                //src={crash}
                 alt="First slide"
               />
              
@@ -26,8 +23,8 @@ class Carrusel extends React.Component
             <Carousel.Item>
               <img
                 className="d-flex w-100 ;"
-                //src="http://pipsum.com/435x310.jpg"
-                src={callduty}
+                src="https://falabella.scene7.com/is/image/FalabellaCO/4153271_1?$producto308$&wid=800&hei=800&qlt=70"
+                //src={callduty}
                 alt="Third slide"
               />
 
@@ -35,8 +32,8 @@ class Carrusel extends React.Component
             <Carousel.Item>
               <img
                 className="d-flex w-100 "
-                //src="http://pipsum.com/435x310.jpg"
-                src={fifa}
+                src="https://falabella.scene7.com/is/image/FalabellaCO/4166549_1?$producto308$&wid=800&hei=800&qlt=70"
+               // src={fifa}
                 alt="Third slide"
               />
           

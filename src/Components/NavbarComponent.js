@@ -11,7 +11,7 @@ class NavbarComponent extends Component{
    
             <div className='barra'>
             
-                <nav class="navbar transparent fixed-top navbar-expand-lg navbar-dark bg-dark ">
+                <nav class="navbar transparent fixed-top navbar-expand-lg navbar-light bg-light ">
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <Link class="navbar-brand" to="/Home">
