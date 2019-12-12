@@ -58,7 +58,7 @@ Nuestra Base de datos, cuenta con 4 colecciones que son:
  
 Así:
 
-![BD](BD.png)
+![ModeloBD](ModeloBD.png)
 
 Los documentos de las diferentes colecciones tienen los siguientes formatos:
 
